@@ -20,20 +20,74 @@
     <meta name="description" content="Designer and developer.">
 
     <style>
+        html {
+            text-align: center;
+            padding: 20px;
+            color: #323232;
+        }
+
+        img.profile {
+            width: 300px;
+            max-width: 100%;
+            border-radius: 150px;
+            border: 1px solid #323232;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #323232;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 4px;
+            width: 33.33334%
+        }
+
         @media(prefers-color-scheme: dark) {
             body {
-                background-color: black;
+                background-color: #323232;
                 color: white;
             }
-        }
+
+            a {
+                color: #7BA7B5;
+            }
+
+            a:visited {
+                color: #7BA7B5;
+            }
+
+            img.profile {
+                border-color: white;
+            }
+
+            table,
+            th,
+            td {
+                border-color: white;
+            }
     </style>
 </head>
 
 <body>
     <main>
         <h1>Tobias Due Munk</h1>
+        <p>Designer Developer, and Partner at <a href="https://kabellmunk.dk">Kabell & Munk</a></p>
+        <img class="profile" src="assets/images/tobias.jpg" alt="Profile picture." width="300px">
         <section>
-            <h2>Accounts</h2>
+            <h3>Accounts</h3>
             <ul>
                 <li>
                     <a href="https://twitter.com/tobiasdm">Twitter</a>
@@ -45,15 +99,57 @@
         </section>
 
         <section>
-            <h2>Talks</h2>
-            <ul>
-                <li>
-                    <a href="talks/2020-01-03_Prototyping-Custom-UI-in-SwiftUI_dotSwift.pdf">
-                        Prototyping Custom UI in
-                        SwiftUI
-                    </a>, dotSwift, February 3, 2020
-                </li>
-            </ul>
+            <h3>Talks & Workshops</h3>
+            <h4>Prototyping Custom UI in SwiftUI</h4>
+            <table>
+                <tr>
+                    <td>February 3, 2020</td>
+                    <td>dotSwift, Paris</td>
+                    <td>
+                        <a href="talks/2020-01-03_Prototyping-Custom-UI-in-SwiftUI_dotSwift.pdf">
+                            Slides
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <h4>CoreImage – Photo Editing in Color and Depth</h4>
+            <p>Given together with <a href="https://twitter.com/kkabell">Kalle Kabell</a></p>
+            <table>
+                <tr>
+                    <td>June 20, 2019</td>
+                    <td>SwiftAveiro, Aveiro</td>
+                    <td>
+                        <a href="
+                        https://git.kabellmunk.dk/coreimage-color-and-depth/photo-editor">
+                            Code
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <h4>Into the Deep</h4>
+            <table>
+                <tr>
+                    <td>April 17, 2018</td>
+                    <td>Appbuilders, Lugano</td>
+                    <td>
+                        <a href="https://git.kabellmunk.dk/talks/into-the-deep">
+                            Code
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <h4>Gems of GameplayKit</h4>
+            <table>
+                <tr>
+                    <td>September 15, 2017</td>
+                    <td>NSSpain, Logroño</td>
+                    <td>
+                        <a href="https://git.kabellmunk.dk/talks/gems-of-gameplaykit/blob/nsspain_export">
+                            Slides
+                        </a>
+                    </td>
+                </tr>
+            </table>
         </section>
     </main>
 
