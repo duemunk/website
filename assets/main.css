@@ -18,7 +18,7 @@ body {
 
 @keyframes accent-fader {
   from {
-    color: #32b141;
+    color: #2fc147;
   }
 
   to {
@@ -48,11 +48,21 @@ body {
 
 @keyframes background-fader {
   from {
-    background-color: #32b141;
+    background-color: #2fc147;
   }
 
   to {
     background-color: #149f2b;
+  }
+}
+
+@keyframes profile-overlay-fader {
+  from {
+    background-color: #00000000;
+  }
+
+  to {
+    background-color: #00000020;
   }
 }
 
@@ -89,7 +99,7 @@ h1 span {
   max-width: 100%;
   border-radius: 4px;
 
-  animation-name: background-fader;
+  animation-name: profile-overlay-fader;
   animation-iteration-count: infinite;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
@@ -99,7 +109,7 @@ h1 span {
   background-image: url(images/tobias.jpg);
   background-size: cover;
   background-position: center;
-  background-blend-mode: multiply;
+  background-blend-mode: hard-light;
 }
 
 @media (min-width: 700px) {
