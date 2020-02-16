@@ -1,0 +1,354 @@
+html {
+  font-family: 'Rubik', sans-serif;
+  color: black;
+  padding: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: black;
+    color: white;
+  }
+}
+
+body {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+@keyframes accent-fader {
+  from {
+    color: #32b141;
+  }
+
+  to {
+    color: #149f2b;
+  }
+}
+
+@keyframes foreground-fader-dark {
+  from {
+    color: #111;
+  }
+
+  to {
+    color: #444;
+  }
+}
+
+@keyframes foreground-fader-light {
+  from {
+    color: white;
+  }
+
+  to {
+    color: #ddd;
+  }
+}
+
+@keyframes background-fader {
+  from {
+    background-color: #32b141;
+  }
+
+  to {
+    background-color: #149f2b;
+  }
+}
+
+header {
+  font-size: 22vw;
+}
+
+@media (min-width: 700px) {
+  header {
+    font-size: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+h1 {
+  flex-basis: 450px;
+  font-size: inherit;
+  margin: -0.061em 0 -0.1em -0.065em;
+  font-weight: 700;
+  letter-spacing: -0.125em;
+  line-height: 0.85em;
+}
+
+h1 span {
+  margin-left: -0.4px;
+  margin-right: -0.4px;
+}
+
+.profile {
+  margin-top: 0.16em;
+  padding-top: 250px;
+  max-width: 100%;
+  border-radius: 4px;
+
+  animation-name: background-fader;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+
+  background-image: url(images/tobias.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+@media (min-width: 700px) {
+  .profile {
+    margin-top: 0;
+    width: 250px;
+    padding-top: 0;
+    height: 250px;
+  }
+}
+
+#title {
+  margin: 0.4em -0.02em 0 -0.08em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 6vw;
+  font-weight: 500;
+}
+
+@media (min-width: 700px) {
+  #title {
+    margin-top: 0.2em;
+    font-size: 43px;
+  }
+}
+
+#accounts {
+  margin: 8em 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-weight: 500;
+  text-align: center;
+}
+
+#accounts > a {
+  flex-basis: 50%;
+}
+
+#accounts > a:first-child {
+  padding-bottom: 4em;
+}
+
+#accounts .head {
+  font-size: 4vw;
+}
+
+#accounts .content {
+  font-size: 6vw;
+  display: block;
+  animation-name: accent-fader;
+}
+
+@media (min-width: 700px) {
+  #accounts > a {
+    flex-basis: 25%;
+  }
+
+  #accounts > a:first-child {
+    padding: 0;
+  }
+
+  #accounts .head {
+    font-size: 18px;
+  }
+
+  #accounts .content {
+    font-size: 24px;
+  }
+}
+
+*:hover,
+:hover * {
+  animation-duration: 0.5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 span,
+a,
+a span,
+.punct {
+  animation-name: accent-fader;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+*,
+span,
+#accounts a span {
+  animation-name: foreground-fader-dark;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+@media (prefers-color-scheme: dark) {
+  *,
+  span,
+  #accounts a span {
+    animation-name: foreground-fader-light;
+  }
+}
+
+.d0 {
+  animation-delay: 0;
+}
+
+.d1 {
+  animation-delay: 0.4s;
+}
+
+.d2 {
+  animation-delay: 0.8s;
+}
+
+.d3 {
+  animation-delay: 1.2s;
+}
+
+.d4 {
+  animation-delay: 1.6s;
+}
+
+.d5 {
+  animation-delay: 2s;
+}
+
+.d6 {
+  animation-delay: 2.4s;
+}
+
+.d7 {
+  animation-delay: 2.8s;
+}
+
+.d0h {
+  animation-delay: 0.2s;
+}
+
+.d1h {
+  animation-delay: 0.6s;
+}
+
+.d2h {
+  animation-delay: 1s;
+}
+
+.d3h {
+  animation-delay: 1.4s;
+}
+
+.d4h {
+  animation-delay: 1.8s;
+}
+
+.d5h {
+  animation-delay: 2.2s;
+}
+
+.d6h {
+  animation-delay: 2.6s;
+}
+
+.d7h {
+  animation-delay: 3s;
+}
+
+.punct {
+  font-weight: 900;
+}
+
+#talks h3 {
+  margin-bottom: 0;
+}
+
+#talks h3 span {
+  animation-name: accent-fader;
+}
+
+.table {
+  width: 100%;
+}
+
+.table .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 80%;
+  width: 100%;
+  margin-left: -4px;
+  margin-right: -4px;
+  padding: 2px 4px 2px;
+}
+
+@media (min-width: 600px) {
+  .table .row {
+    font-size: 100%;
+  }
+}
+
+.table .row:hover {
+  background-color: #eee;
+  border-radius: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .table .row:hover {
+    background-color: #222;
+  }
+}
+
+.table .row > div:first-child {
+  flex-basis: 25%;
+}
+
+.table .row > div:nth-child(2) {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.table .row > div:last-child {
+  flex-basis: 25%;
+  text-align: end;
+}
+
+.table .row .long {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .table .row .long {
+    display: unset;
+  }
+
+  .table .row .short {
+    display: none;
+  }
+}

@@ -15,215 +15,236 @@
 
     <link rel="canonical" href="https://duemunk.dk/">
     <link rel="shortcut icon" href="favicon.ico">
+    <link href="assets/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap" rel="stylesheet">
 
     <title>Tobias Due Munk</title>
     <meta name="description" content="Designer and developer.">
-
-    <style>
-        html {
-            text-align: center;
-            padding: 20px;
-            color: #323232;
-        }
-
-        body {
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 800px;
-        }
-
-        img.profile {
-            width: 300px;
-            max-width: 100%;
-            border-radius: 150px;
-            border: 1px solid #323232;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        table {
-            width: 100%;
-        }
-
-        table,
-        th,
-        td {
-            border: 1px solid #323232;
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            padding: 4px;
-            width: 33.33334%;
-        }
-
-        @media(prefers-color-scheme: dark) {
-            body {
-                background-color: #323232;
-                color: white;
-            }
-
-            a {
-                color: #7BA7B5;
-            }
-
-            a:visited {
-                color: #7BA7B5;
-            }
-
-            img.profile {
-                border-color: white;
-            }
-
-            table,
-            th,
-            td {
-                border-color: white;
-            }
-        }
-    </style>
 </head>
 
 <body>
     <main>
-        <h1>Tobias Due Munk</h1>
-        <p>Designer, Developer, and Partner at <a href="https://kabellmunk.dk">Kabell & Munk</a></p>
-        <img class="profile" src="assets/images/tobias.jpg" alt="Profile picture." width="300px">
-        <section>
-            <h3>Accounts</h3>
-            <ul>
-                <li>
-                    <a href="https://twitter.com/tobiasdm">Twitter</a>
-                </li>
-                <li>
-                    <a href="https://github.com/duemunk">GitHub</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/tobias-due-munk">LinkedIn</a>
-                </li>
-            </ul>
-        </section>
+        <header>
+            <h1>
+                <a href="/">
+                    <span class="d0">T</span>
+                    <span class="d1">O</span>
+                    <span class="d2">B</span>
+                    <span class="d3">I</span>
+                    <span class="d4">A</span>
+                    <span class="d5">S</span>
+                    <br>
+                    <span class="d0h">D</span>
+                    <span class="d1h">U</span>
+                    <span class="d2h">E</span>
+                    <br>
+                    <span class="d1">M</span>
+                    <span class="d2">U</span>
+                    <span class="d3">N</span>
+                    <span class="d4">K</span>
+                </a>
+            </h1>
+            <div class="profile d6" aria-label="Profile picture"></div>
+        </header>
 
-        <section>
-            <h3>Talks & Workshops</h3>
-            <h4>Prototyping Custom UI in SwiftUI</h4>
-            <table>
-                <tr>
-                    <td>February 3, 2020</td>
-                    <td><a href="https://2020.dotswift.io">dotSwift</a>, Paris</td>
-                    <td>
-                        <a href="https://www.youtube.com/watch?v=1BHHybRnHFE">Video</a>,
-                        <a href="talks/2020-01-03_Prototyping-Custom-UI-in-SwiftUI_dotSwift.pdf">
+        <div id="title">
+            <span class="text">Designer</span>
+            <span class="punct d5">+</span><span class="text">Developer</span>
+            <span class="punct d6">+</span><span class="text">Partner</span>
+        </div>
+
+        <div id="accounts">
+            <a href="https://kabellmunk.dk">
+                <span class="head d0">Work</span>
+                <span class="content d0h">Kabell & Munk</span>
+            </a>
+            <a href="https://twitter.com/tobiasdm">
+                <span class="head d1">Opinions</span>
+                <span class="content d1h">Twitter</span>
+            </a>
+            <div class="break"></div>
+            <a href="https://github.com/duemunk">
+                <span class="head d2">Code</span>
+                <span class="content d2h">GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/tobias-due-munk">
+                <span class="head d3">Pro</span>
+                <span class="content d3h">LinkedIn</span>
+            </a>
+        </div>
+
+        <section id="talks">
+            <h2>Talks & Workshops</h2>
+            <h3>
+                <span class="d0">P</span><span class="d0h">r</span><span class="d1">o</span><span
+                    class="d1h">t</span><span class="d2">o</span><span class="d2h">t</span><span
+                    class="d0">y</span><span class="d0h">p</span><span class="d1">i</span><span
+                    class="d1h">n</span><span class="d2">g</span>
+                <span class="d2h">C</span><span class="d0">u</span><span class="d0h">s</span><span
+                    class="d1">t</span><span class="d1h">o</span><span class="d2">m</span>
+                <span class="d2h">U</span><span class="d0">I</span>
+                <span class="d0h">i</span><span class="d1">n</span>
+                <span class="d1h">S</span><span class="d2">w</span><span class="d2h">i</span><span
+                    class="d0">f</span><span class="d0h">t</span><span class="d1">U</span><span class="d1h">I</span>
+            </h3>
+            <div class="table">
+                <div class="row">
+                    <div><span class="long">20</span><span class="short">‘</span>20 Feb<span class="long">ruary</span> 3
+                    </div>
+                    <div><a class="d0" href="https://2020.dotswift.io">dotSwift</a>, Paris</div>
+                    <div>
+                        <a class="d1" href="https://www.youtube.com/watch?v=1BHHybRnHFE">Video</a>,
+                        <a class="d2" href="talks/2020-01-03_Prototyping-Custom-UI-in-SwiftUI_dotSwift.pdf">
                             Slides
                         </a>
-                    </td>
-                </tr>
-            </table>
-            <h4>CoreImage – Photo Editing in Color and Depth</h4>
-            <table>
-                <tr>
-                    <td>October 9, 2019</td>
-                    <td><a href="https://2019.pragmaconference.com">Pragma Conference</a>, Bologna</td>
-                    <td>
-                        <a href="talks/2019-10-09_CoreImage-Photo-Editing-in-Color-and-Depth_Pragma.pdf">Slides</a>,
-                        <a href="
+                    </div>
+                </div>
+            </div>
+            <h3>
+                <span class="d0">C</span><span class="d0h">o</span><span class="d1">r</span><span
+                    class="d1h">e</span><span class="d2">I</span><span class="d2h">m</span><span
+                    class="d0">a</span><span class="d0h">g</span><span class="d1">e</span>
+                <span class="d1h">–</span>
+                <span class="d2">P</span><span class="d2h">h</span><span class="d0">o</span><span
+                    class="d0h">t</span><span class="d1">o</span>
+                <span class="d1h">E</span><span class="d2">d</span><span class="d2h">i</span><span class="d0">t</span>
+                <span class="d0h">i</span><span class="d1">n</span>
+                <span class="d1h">C</span><span class="d2">o</span><span class="d2h">l</span><span
+                    class="d0">o</span><span class="d0h">r</span>
+                <span class="d1">a</span><span class="d1h">n</span><span class="d2">d</span>
+                <span class="d2h">D</span><span class="d0">e</span><span class="d0h">p</span><span
+                    class="d1">t</span><span class="d1h">h</span>
+            </h3>
+            <div class="table">
+                <div class="row">
+                    <div><span class="long">20</span><span class="short">‘</span>19 Oct<span class="long">ober</span> 9
+                    </div>
+                    <div><a href="https://2019.pragmaconference.com">Pragma Conf<span class="long">erence</span></a>,
+                        Bologna</div>
+                    <div>
+                        <a class="d0h"
+                            href="talks/2019-10-09_CoreImage-Photo-Editing-in-Color-and-Depth_Pragma.pdf">Slides</a>,
+                        <a class="d1h" href="
                         https://git.kabellmunk.dk/coreimage-color-and-depth/photo-editor">Code</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>June 20, 2019</td>
-                    <td><a href="http://swiftaveiro.xyz/editions/2019/">SwiftAveiro</a>, Aveiro (w. <a
-                            href="https://twitter.com/kkabell">Kalle Kabell</a>)</td>
-                    <td>
-                        <a
+                    </div>
+                </div>
+                <div class="row">
+                    <div><span class="long">20</span><span class="short">‘</span>19 Jun<span class="long">e</span> 20
+                    </div>
+                    <div><a class="d1" href="http://swiftaveiro.xyz/editions/2019/">SwiftAveiro</a>, Aveiro (w.
+                        <a href="https://twitter.com/kkabell">K<span class="short">.</span><span
+                                class="long">alle</span> Kabell</a>)</div>
+                    <div>
+                        <a class="d2"
                             href="talks/2019-06-20_CoreImage-Photo-Editing-in-Color-and-Depth_SwiftAveiro.pdf">Slides</a>,
-                        <a href="
+                        <a class="d3" href="
                         https://git.kabellmunk.dk/coreimage-color-and-depth/photo-editor">Code</a>
-                    </td>
-                </tr>
-            </table>
-            <h4>Into the Deep</h4>
-            <table>
-                <tr>
-                    <td>November 1, 2018</td>
-                    <td><a href="https://2018.mobileera.rocks">mobile era</a>, Oslo</td>
-                    <td>
-                        <a href="
+                    </div>
+                </div>
+            </div>
+            <h3>
+                <span class="d0">I</span><span class="d0h">n</span><span class="d1">t</span><span class="d1h">o</span>
+                <span class="d2">t</span><span class="d2h">h</span><span class="d0">e</span>
+                <span class="d0h">D</span><span class="d1">e</span><span class="d1h">e</span><span class="d2">p</span>
+            </h3>
+            <div class="table">
+                <div class="row">
+                    <div><span class="long">20</span><span class="short">‘</span>18 Nov<span class="long">ember</span>
+                        1</div>
+                    <div><a class="d1h" href="https://2018.mobileera.rocks">mobile era</a>, Oslo</div>
+                    <div>
+                        <a class="d2h" href="
                 https://www.youtube.com/watch?v=yHmuBSGBx28">Video</a>,
-                        <a href="https://git.kabellmunk.dk/talks/into-the-deep">Code</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>October 5, 2018</td>
-                    <td><a href="https://2018.mobiconf.org">MobiConf</a>, Krakow</td>
-                    <td>
-                        <a href="https://www.youtube.com/watch?v=a-1A2gEuVnQ">Video</a>,
-                        <a href="https://git.kabellmunk.dk/talks/into-the-deep">Code</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>June 5, 2018</td>
-                    <td><a href="https://addconf.com/2018/">ADDC</a>, Barcelona</td>
-                    <td>
-                        <a href="https://www.youtube.com/watch?v=XfEBtxhhI0g">Video</a>,
-                        <a href="https://git.kabellmunk.dk/talks/into-the-deep">Code</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>April 17, 2018</td>
-                    <td><a href="https://2018.appbuilders.ch">App Builders</a>, Lugano</td>
-                    <td>
-                        <a href="https://www.youtube.com/watch?v=SCOLRVVRDJk">Video</a>,
-                        <a href="https://git.kabellmunk.dk/talks/into-the-deep">Code</a>
-                    </td>
-                </tr>
-            </table>
-            <h4>Gems of GameplayKit</h4>
-            <table>
-                <tr>
-                    <td>November 25, 2017</td>
-                    <td><a href="http://2017.uamobile.org">UAMobile</a>, Kiev</td>
-                    <td>
-                        <a href="talks/2017-09-15_Gems-of-GameplayKit_NSSpain.pdf">Slides</a>,
-                        <a href="https://git.kabellmunk.dk/talks/gems-of-gameplaykit/blob/uamobile_export">Code</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>October 13, 2017</td>
-                    <td><a href="https://2017.pragmaconference.com">Pragma Conference</a>, Verona</td>
-                    <td>
-                        <a href="talks/2017-10-13_Gems-of-GameplayKit_Pragma.pdf">
+                        <a class="d3h" href="https://git.kabellmunk.dk/talks/into-the-deep">Code</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div><span class="long">20</span><span class="short">‘</span>18 Oct<span class="long">ober</span> 5
+                    </div>
+                    <div><a class="d2" href="https://2018.mobiconf.org">MobiConf</a>, Krakow</div>
+                    <div>
+                        <a class="d3" href="https://www.youtube.com/watch?v=a-1A2gEuVnQ">Video</a>,
+                        <a class="d3" href="https://git.kabellmunk.dk/talks/into-the-deep">Code</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div><span class="long">20</span><span class="short">‘</span>18 Jun<span class="long">e</span> 5
+                    </div>
+                    <div><a class="d2h" href="https://addconf.com/2018/">ADDC</a>, Barcelona</div>
+                    <div>
+                        <a class="d3h" href="https://www.youtube.com/watch?v=XfEBtxhhI0g">Video</a>,
+                        <a class="d4h" href="https://git.kabellmunk.dk/talks/into-the-deep">Code</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div><span class="long">20</span><span class="short">‘</span>18 Apr<span class="long">il</span> 17
+                    </div>
+                    <div><a class="d3" href="https://2018.appbuilders.ch">App Builders</a>,
+                        Lugano</div>
+                    <div>
+                        <a class="d4" href="https://www.youtube.com/watch?v=SCOLRVVRDJk">Video</a>,
+                        <a class="d5" href="https://git.kabellmunk.dk/talks/into-the-deep">Code</a>
+                    </div>
+                </div>
+            </div>
+            <h3>
+                <span class="d0">G</span><span class="d0h">e</span><span class="d1">m</span><span class="d1h">s</span>
+                <span class="d2">o</span><span class="d2h">f</span>
+                <span class="d0">G</span><span class="d0h">a</span><span class="d1">m</span><span
+                    class="d1h">e</span><span class="d2">p</span><span class="d2h">l</span><span
+                    class="d0">a</span><span class="d0h">y</span><span class="d1">K</span><span
+                    class="d1h">i</span><span class="d2">t</span>
+            </h3>
+            <div class="table">
+                <div class="row">
+                    <div><span class="long">20</span><span class="short">‘</span>17 Nov<span class="long">ember</span>
+                        25</div>
+                    <div><a class="d3h" href="http://2017.uamobile.org">UAMobile</a>, Kiev
+                    </div>
+                    <div>
+                        <a class="d4h" href="talks/2017-09-15_Gems-of-GameplayKit_NSSpain.pdf">Slides</a>,
+                        <a class="d5h"
+                            href="https://git.kabellmunk.dk/talks/gems-of-gameplaykit/blob/uamobile_export">Code</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div><span class="long">20</span><span class="short">‘</span>17 Oct<span class="long">ober</span> 13
+                    </div>
+                    <div><a class="d4" href="https://2017.pragmaconference.com">Pragma
+                            Conf<span class="long">erence</span></a>, Verona
+                    </div>
+                    <div>
+                        <a class="d5" href="talks/2017-10-13_Gems-of-GameplayKit_Pragma.pdf">
                             Slides</a>,
-                        <a href="https://git.kabellmunk.dk/talks/gems-of-gameplaykit/blob/pragma_export">
+                        <a class="d6" href="https://git.kabellmunk.dk/talks/gems-of-gameplaykit/blob/pragma_export">
                             Code</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>September 15, 2017</td>
-                    <td><a href="https://2017.nsspain.com">NSSpain</a>, Logroño</td>
-                    <td>
-                        <a href="https://vimeo.com/235143936">Video</a>,
-                        <a href="talks/2017-09-15_Gems-of-GameplayKit_NSSpain.pdf">
-                            Slides </a>,
-                        <a href="https://git.kabellmunk.dk/talks/gems-of-gameplaykit/blob/nsspain_export">
+                    </div>
+                </div>
+                <div class="row">
+                    <div><span class="long">20</span><span class="short">‘</span>17 Sep<span class="long">tember</span>
+                        15</div>
+                    <div><a class="d4h" href="https://2017.nsspain.com">NSSpain</a>,
+                        Logroño</div>
+                    <div>
+                        <a class="d5h" href="https://vimeo.com/235143936">Video</a>,
+                        <a class="d6h" href="talks/2017-09-15_Gems-of-GameplayKit_NSSpain.pdf">
+                            Slides</a>,
+                        <a class="d7h" href="https://git.kabellmunk.dk/talks/gems-of-gameplaykit/blob/nsspain_export">
                             Code</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>September 7, 2017</td>
-                    <td><a href="https://www.meetup.com/CocoaHeads-Malmo/events/242535828/">CocoaHeads</a>,
-                        Malmö</td>
-                    <td>
-                        <a href="talks/2017-09-07_Gems-of-GameplayKit_Malmö.pdf">
+                    </div>
+                </div>
+                <div class="row">
+                    <div><span class="long">20</span><span class="short">‘</span>17 Sep<span class="long">tember</span>
+                        7</div>
+                    <div><a class="d5" href="https://www.meetup.com/CocoaHeads-Malmo/events/242535828/">CocoaHeads</a>,
+                        Malmö</div>
+                    <div>
+                        <a class="d6" href="talks/2017-09-07_Gems-of-GameplayKit_Malmö.pdf">
                             Slides
                         </a>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
