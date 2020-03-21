@@ -1,5 +1,6 @@
 html {
   font-family: 'Rubik', sans-serif;
+  background-color: white;
   color: black;
   padding: 20px;
   @supports (padding-top: constant(safe-area-inset-top)) {
