@@ -223,7 +223,8 @@ a:hover {
 h1 span,
 a,
 a span,
-.punct {
+.punct,
+footer span {
   animation-name: accent-fader;
   animation-iteration-count: infinite;
   animation-duration: 1s;
@@ -385,4 +386,14 @@ span,
   .table .row .short {
     display: none;
   }
+}
+
+footer {
+  margin-top: 8em;
+  text-align: center;
+  font-weight: 900;
+}
+
+footer span {
+  padding: 0 1px;
 }
